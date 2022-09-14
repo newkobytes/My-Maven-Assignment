@@ -39,4 +39,14 @@ if(ActError.equals(ExpError)) {
 }
 
 }
+	
+	@Test
+	public void Test3()
+	{
+		String UserName = sheet.getRow(1).getCell(0).getStringCellValue();
+        String Password = sheet.getRow(1).getCell(1).getStringCellValue();
+		LoginPageLabs lp = new LoginPageLabs(driver);
+		lp.Login(UserName, Password);
+		System.out.println("Inside Test3 using excel data");
+	}
 }

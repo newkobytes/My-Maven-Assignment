@@ -3,11 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="TestCasesSwagLabs.HomeTestLabs">
+        <methods>
+          <include name="Test1"/>
+          <include name="SetUp"/>
+          <include name="DataSetup"/>
+          <include name="TearDown"/>
+          <include name="DataClean"/>
+        </methods>
+      </class> <!-- TestCasesSwagLabs.HomeTestLabs -->
       <class name="TestCasesSwagLabs.SwagLabsLogin">
         <methods>
           <include name="SetUp"/>
+          <include name="Test3"/>
           <include name="Test2"/>
+          <include name="DataSetup"/>
           <include name="TearDown"/>
+          <include name="DataClean"/>
+          <include name="Test1"/>
         </methods>
       </class> <!-- TestCasesSwagLabs.SwagLabsLogin -->
     </classes>
